@@ -33,6 +33,17 @@
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
       };
+      // For shift I do not want to chain the sticky key, I want it to bereleased
+      // immediately
+      // https://zmk.dev/docs/behaviors/sticky-key#example
+      skq: sticky_key_quick_release {
+        compatible = "zmk,behavior-sticky-key";
+        label = "STICKY_KEY_QUICK_RELEASE";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <1000>;
+        quick-release;
+      };
     };
 
     keymap {
@@ -106,7 +117,7 @@
         combo_shift {
             timeout-ms = <50>;
             key-positions = <27 28>;
-            bindings = <&sk LSHIFT>;
+            bindings = <&skq LSHIFT>;
         };
     };
 
