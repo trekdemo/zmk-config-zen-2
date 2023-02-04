@@ -39,7 +39,7 @@
       compatible = "zmk,keymap";
 
       default_layer {
-        label = "COLEMAK-DH";
+        label = "BASE";
         bindings = <
           &kp Q      &kp W       &kp F      &kp P        &kp B        &kp J   &kp L        &kp U      &kp Y        &kp SQT
           &hm LALT A &hm LCTRL R &hm LCMD S &hm LSHIFT T &kp G        &kp M   &hm RSHIFT N &hm RCMD E &hm RCTRL I  &hm RALT O
@@ -59,7 +59,7 @@
       };
 
       sym_layer {
-        label = "SYM";
+        label = "SYMBOL";
         bindings = <
           &kp ESC   &none  &none     &kp BSLH  &kp TILDE   &kp AMPS &kp LBRC &kp RBRC &kp PRCNT &kp EQUAL
           &kp EXCL  &kp AT &kp UNDER &kp COLON &kp DLLR    &kp PIPE &kp LBKT &kp RBKT &kp PLUS  &kp MINUS
@@ -70,7 +70,7 @@
 
 
       num_layer {
-        label = "NUM";
+        label = "NUMBER";
         bindings = <
           &none     &bt BT_PRV &bt BT_NXT &none    &bt BT_CLR  &kp PRCNT &kp N7    &kp N8    &kp N9    &kp EQUAL
           &kp LALT  &kp LCTL   &kp LCMD   &kp LSFT &none       &kp PLUS  &kp N4    &kp N5    &kp N6    &kp MINUS
